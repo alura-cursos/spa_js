@@ -7,7 +7,7 @@ module.exports = {
       open: true,
       contentBase: "dist"
     },
-    entry: "./src/componentes/listagem/listagem-cliente.js",
+    entry: "./src/main.js" ,
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
