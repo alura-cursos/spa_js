@@ -1,8 +1,7 @@
-
+import { deletaCliente, listarClientes} from '../../api/cliente.js'
 
 const removeCliente = (id) => {
   if(confirm("Deseja deletar o cliente ?")){
-    debugger;
     deletaCliente(id)
     window.location.reload()
   }
@@ -17,7 +16,7 @@ const exibeCliente = (cpf, nome, id) => {
     <td>${cpf}</td>
     <td>${nome}</td>
     <button type="button" class="btn btn-danger" onclick="removeCliente(${id})">Excluir</button>
-    <a href="./edita/edita-clientes.html?id=${id}">
+    <a href="edita-clientes.html?id=${id}">
     <button type=""button class="btn btn-info">Editar</button>
     </a>
     
