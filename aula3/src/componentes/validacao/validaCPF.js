@@ -62,3 +62,5 @@ function validaCPF(cpf){
         verificaCPFInvalidos(cpf)
     )
 }
+
+export default validaCPF
